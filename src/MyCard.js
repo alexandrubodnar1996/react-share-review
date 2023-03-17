@@ -5,6 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 
 function MyCard() {
+    // TODO: move under /src/components
     return (
         <Card sx={{ width: 300, height:200, backgroundColor: 'inherit', border: 'none', boxShadow: 'none', alignItems: 'center', alignContent: 'center' }}>
             <CardMedia

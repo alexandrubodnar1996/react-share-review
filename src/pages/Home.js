@@ -4,9 +4,10 @@ import MyCard from '../MyCard';
 import { Grid } from '@mui/material';
 import MyButton from './MyButton';
 
-
-
 function Home() {
+    // TODO: move navbar to a separate component
+    // TODO: move the grid and button to the Blog page
+    // TODO: remove <Outlet /> from this page
     return (
         <>
             <div style={{ textAlign: 'center' }}>HOME</div>

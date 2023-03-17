@@ -9,7 +9,7 @@ import Pages from './pages/Pages';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 
-
+// TODO add Pages/Team as child under Pages route
 const router = createBrowserRouter(
   [
     {
