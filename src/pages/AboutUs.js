@@ -1,11 +1,17 @@
-import '../css/Home.css';
+import "../css/Home.css";
+import { Link } from "react-router-dom";
+import Breadcrumbs from "@mui/material/Breadcrumbs";
 
 function AboutUs() {
-    return (
-        <>
-            <div>About Us Page</div>
-        </>
-    );
+  const breadcrumbs = [<Link to="/">Home</Link>, <span>About Us</span>];
+  return (
+    <>
+      <Breadcrumbs separator="-" aria-label="breadcrumb">
+        {breadcrumbs}
+      </Breadcrumbs>
+      <div>About Us Page</div>
+    </>
+  );
 }
 
 export default AboutUs;

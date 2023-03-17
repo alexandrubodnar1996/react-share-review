@@ -1,29 +1,21 @@
 import '../css/Home.css';
-import { Link, Outlet, useLocation, useParams } from 'react-router-dom';
-import PageContent from './PageContent';
+import { Link, Outlet } from 'react-router-dom';
 import MyCard from '../MyCard';
-import { Grid, ListItem } from '@mui/material';
+import { Grid } from '@mui/material';
 import MyButton from './MyButton';
 
 
 
 function Home() {
-    const location = useLocation();
     return (
         <>
             <div style={{ textAlign: 'center' }}>HOME</div>
             <div className="navbar">
-
                 <Link to={'/'}><span className='navelement'>Home</span></Link>
                 <Link to={'/About'}><span className='navelement'>About Us</span></Link>
                 <Link to={'/Pages'}><span className='navelement'>Pages</span></Link >
                 <Link to={'/Blog'}><span className='navelement'>Blog</span></Link >
                 <Link to={'/Contact'}><span className='navelement'>Contact</span></Link >
-            </div>
-            <div>
-                <Link to={'/'}>
-                    {location.pathname.substring(1)}
-                </Link>
             </div>
             <Outlet />
 
